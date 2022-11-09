@@ -1,2 +1,1 @@
-# PreEntrega3-Irazabal
-Proyecto para CoderHouse | HTML-CSS | Desarrollo Web
+Hola, este es mi primer repo. Bienvenido a mi GitHub
