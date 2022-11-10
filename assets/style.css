@@ -30,17 +30,16 @@ body{
 .topnav{
     display: flex;
     align-items: center;
-    justify-content:space-between;
     height: 70px;
 }
 
 nav ul{
     display: flex;
     padding: 0%;
-    margin: 0% 5% 0px 5%;
+    margin: 0% 10% 0px 10%;
     width: 100%;
     height: 40px;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 
 nav ul li{
@@ -72,6 +71,7 @@ nav ul li{
     color: white;
     font-size: 14px;
     transition: .5s;
+    margin-right: 50px;
 }
 
 .button-nav:hover{
@@ -83,200 +83,223 @@ nav ul li{
 
 .logo{
     height: 40px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 35px;
+    margin-left: 50px;
 }
 
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1399px) {
     
+    .navbar{
+        padding: 1.2rem 0;
+        z-index: auto;
+    }
+    
+    .container{
+        margin: 0px 5% 0px 5%;
+    }
+    
     .topnav{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        padding: 0% 4% 0% 4%;
-        }
+        height: 70px;
+    }
     
     nav ul{
         display: flex;
         padding: 0%;
-        margin: 0%;
+        margin: 0% 2% 0px 2%;
         width: 100%;
+        height: 40px;
         justify-content:space-around;
-        }
-
+    }
+    
     nav ul li{
         display: inline-block;
         list-style-type: none;
         padding: 0px;
-        margin: 10px;
-        }
-
+        margin: 10px 0px 10px 0px;
+    }
+    
     .topnav a{
-
+    
         text-decoration: none;
         color: white;
         font-weight: bold;
         font-size: 14px;
-        }
-
-    .logo{
-        display: flex;
-        justify-content: center;
-        height: max-content;
-        width: max-content;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 35px;
-        margin: 0px 0px 0px 0px;
-        }
-
-    button{
-        background: #ea1538;
-        border: none;
-        padding: 9px 15px;
+    }
+    
+    .topnav li a:hover{
+        color:#ea1538;
+        transition: .5s;
+    }
+    
+    .button-nav{
+        background: #ea153900;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        padding: 12px 30px;
         border-radius: 30px;
         text-decoration: none;
         color: white;
-        font-weight:bold;
-        font-size: 10px;
+        font-size: 14px;
         transition: .5s;
+        margin-right: 50px;
     }
-
-    button:hover{
+    
+    .button-nav:hover{
+        background: #ea1539;
         transform: scale(1.1);
         cursor: pointer;
         text-decoration: none;
+    }
+    
+    .logo{
+        height: 40px;
+        margin-left: 50px;
     }
 }
 
 @media only screen and (max-width: 699px) {
 
+    .navbar{
+        padding: 1.2rem 0;
+        z-index: auto;
+    }
+    
+    .container{
+        margin: 0px 5% 0px 5%;
+    }
+    
     .topnav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 20%;
-        }
+        justify-content:space-between;
+        height: 180px;
+    }
     
     nav ul{
         display: flex;
         padding: 0%;
-        margin: 5% 0% 5% 0%;
+        margin: 0% 5% 0px 5%;
         width: 100%;
-        justify-content:space-around;
-        }
-
+        height: 40px;
+    }
+    
     nav ul li{
         display: inline-block;
         list-style-type: none;
         padding: 0px;
-        margin: 10px;
-        }
-
+        margin: 10px 0px 10px 0px;
+    }
+    
     .topnav a{
-
+    
         text-decoration: none;
         color: white;
         font-weight: bold;
-        font-size: 12px;
-        }
-
-    .logo{
-        display: flex;
-        justify-content: center;
-        height: max-content;
-        width: max-content;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 35px;
-        margin: 3% 0px 0px 0px;
-        }
-
-    button{
-        background: #ea1538;
-        border: none;
-        padding: 9px 15px;
+        font-size: 14px;
+    }
+    
+    .topnav li a:hover{
+        color:#ea1538;
+        transition: .5s;
+    }
+    
+    .button-nav{
+        background: #ea153900;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        padding: 12px 30px;
         border-radius: 30px;
         text-decoration: none;
         color: white;
-        font-weight:bold;
-        font-size: 10px;
+        font-size: 14px;
         transition: .5s;
+        margin: 15px;
     }
-
-    button:hover{
+    
+    .button-nav:hover{
+        background: #ea1539;
         transform: scale(1.1);
         cursor: pointer;
         text-decoration: none;
+    }
+    
+    .logo{
+        height: 40px;
+        margin: 15px;
     }
 }
 
 @media only screen and (max-width: 419px) {
 
+    .navbar{
+        padding: 1.2rem 0;
+        z-index: auto;
+    }
+    
+    .container{
+        margin: 0px 5% 0px 5%;
+    }
+    
     .topnav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 20%;
-        }
+        justify-content:space-between;
+        height: 180px;
+    }
     
     nav ul{
         display: flex;
         padding: 0%;
-        margin: 5% 0% 5% 0%;
+        margin: 0% 5% 0px 5%;
         width: 100%;
-        justify-content:space-around;
-        }
-
+        height: 40px;
+    }
+    
     nav ul li{
         display: inline-block;
         list-style-type: none;
         padding: 0px;
-        margin: 5px;
-        }
-
+        margin: 10px 0px 10px 0px;
+    }
+    
     .topnav a{
-
+    
         text-decoration: none;
         color: white;
         font-weight: bold;
-        font-size: 10px;
-        }
-
-    .logo{
-        display: flex;
-        justify-content: center;
-        height: max-content;
-        width: max-content;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 35px;
-        margin: 3% 0px 0px 0px;
-        }
-
-    button{
-        background: #ea1538;
-        border: none;
-        padding: 9px 7px;
+        font-size: 14px;
+    }
+    
+    .topnav li a:hover{
+        color:#ea1538;
+        transition: .5s;
+    }
+    
+    .button-nav{
+        background: #ea153900;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        padding: 12px 30px;
         border-radius: 30px;
         text-decoration: none;
         color: white;
-        font-weight:bold;
-        font-size: 10px;
+        font-size: 14px;
         transition: .5s;
-        height: 30px;
+        margin: 15px;
     }
-
-    button:hover{
+    
+    .button-nav:hover{
+        background: #ea1539;
         transform: scale(1.1);
         cursor: pointer;
         text-decoration: none;
+    }
+    
+    .logo{
+        height: 40px;
+        margin: 15px;
     }
 }
 
@@ -336,341 +359,253 @@ nav ul li{
 
 @media only screen and (max-width: 1399px) {
 
-    .contenedor-div{
-        display: flex;
-        margin: 10% 10% 7% 10%;
-        height: 10%;
-        width: 80%;
-    }
-    .contenedor-principal{
+    .grid-container{
         display: grid;
         grid-gap: 15px 20px;
         grid-template-areas: 
-            "item1 item2" 
-            "item1 item3";
+            "item1"
+            "item2"
+            "item3";
+        margin-top: 8%;
+        margin-bottom: 8%;
     }
+    
+    .glassmorfism{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.103);
+        backdrop-filter: blur( 2px );
+        border: 1px solid rgba(255, 255, 255, 0.103);
+    }
+    
     
     .item{
         color: white;
-        padding: 20px;
+        text-align: center;
     }
     
     .item1{
         grid-area: item1;
-        padding: 0%;
-        height: 400px;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        font-size: 30px;
     }
     
     .item2{
         grid-area: item2;
-        text-align:start;
-        padding: 0%;
-        margin: 0%;
-        width: 260px;
-        height: 50px;
-        font-size: 25px;
-    }
-    
-    main div h2{
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    main div p{
-        text-align: justify;
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        font-size: 23px;
+        font-weight: 100;
     }
     
     .item3{
         grid-area: item3;
-        width: 100%;
-        height: 335px;
-        padding:0%;
-        margin: 0;
-    }
-    
-    #foto-juan{
-        width: 500px;
-        height: 400px;
-        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 969px) {
 
-    .contenedor-div{
-        display: flex;
-        margin: 10% 0% 0% 23%;
-        height: 10%;
-        width: 50%;
-    }
-    .contenedor-principal{
+    .grid-container{
         display: grid;
         grid-gap: 15px 20px;
         grid-template-areas: 
-            "item1" 
-            "item2" 
+            "item1"
+            "item2"
             "item3";
+        margin-top: 8%;
+        margin-bottom: 8%;
     }
+    
+    .glassmorfism{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.103);
+        backdrop-filter: blur( 2px );
+        border: 1px solid rgba(255, 255, 255, 0.103);
+    }
+    
     
     .item{
         color: white;
-        padding: 20px;
+        text-align: center;
     }
     
     .item1{
+        grid-area: item1;
         display: flex;
         justify-content: center;
-        grid-area: item1;
-        padding: 0%;
-        height: 300px;
+        height: 115px;
+        font-size: 30px;
     }
     
     .item2{
         grid-area: item2;
-        text-align: center;
-        padding: 0%;
-        margin: 0%;
-        width: 100%;
-        height: 50px;
-        font-size: 25px;
-    }
-    
-    main div h2{
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    main div p{
-        text-align: justify;
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        font-size: 23px;
+        font-weight: 100;
     }
     
     .item3{
         grid-area: item3;
-        width: 100%;
-        height: 335px;
-        padding:0%;
-        margin: 0;
-    }
-    
-    #foto-juan{
-        width: 400px;
-        height: 300px;
-        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 699px) {
 
-    .contenedor-div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 5%;
-        margin: 5% 5% 5% 13%;
-        height: 100%;
-        width: 72%;
-    }
-    .contenedor-principal{
+    .grid-container{
         display: grid;
         grid-gap: 15px 20px;
         grid-template-areas: 
-            "item1" 
+            "item1"
             "item2"
             "item3";
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .glassmorfism{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.103);
+        backdrop-filter: blur( 2px );
+        border: 1px solid rgba(255, 255, 255, 0.103);
     }
     
     .item{
         color: white;
-        padding: 20px;
+        text-align: center;
     }
     
     .item1{
         grid-area: item1;
-        align-items: center;
-        padding: 0%;
-        height: 400px;
+        display: flex;
+        justify-content: center;
+        height: 160px;
+        font-size: 30px;
     }
     
     .item2{
         grid-area: item2;
-        text-align:center;
-        padding: 0%;
-        margin: 0%;
-        width: 100%;
-        height: 50px;
-        font-size: 25px;
-    }
-    
-    main div h2{
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    main div p{
-        text-align: justify;
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        font-size: 23px;
+        font-weight: 100;
     }
     
     .item3{
         grid-area: item3;
-        width: 100%;
-        height: 100%;
-        padding:0%;
-        margin: 0;
-    }
-    
-    #foto-juan{
-        width: 100%;
-        height: 80%;
-        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 499px) {
 
-    .contenedor-div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 5%;
-        margin: 10% 5% 5% 13%;
-        height: 100%;
-        width: 72%;
-    }
-    .contenedor-principal{
+    .grid-container{
         display: grid;
         grid-gap: 15px 20px;
         grid-template-areas: 
-            "item1" 
+            "item1"
             "item2"
             "item3";
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .glassmorfism{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.103);
+        backdrop-filter: blur( 2px );
+        border: 1px solid rgba(255, 255, 255, 0.103);
     }
     
     .item{
         color: white;
-        padding: 20px;
+        text-align: center;
     }
     
     .item1{
         grid-area: item1;
-        align-items: center;
-        padding: 0%;
-        height: 100%;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 160px;
+        font-size: 30px;
     }
     
     .item2{
         grid-area: item2;
-        text-align:center;
-        padding: 0%;
-        margin: 0%;
-        width: 100%;
-        height: 50px;
-        font-size: 20px;
-    }
-    
-    main div h2{
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    main div p{
-        text-align: center;
-        margin: 0%;
-        padding: 0%;
-        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        font-size: 23px;
+        font-weight: 100;
     }
     
     .item3{
         grid-area: item3;
-        width: 100%;
-        height: 100%;
-        padding:0%;
-        margin: 0;
-    }
-    
-    #foto-juan{
-        width: 80%;
-        height: 100%;
-        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        height: 200px;
     }
 }
 
 @media only screen and (max-width: 419px) {
 
-    .contenedor-div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 5%;
-        margin: 10% 5% 5% 13%;
-        height: 100%;
-        width: 72%;
-    }
-    .contenedor-principal{
+    .grid-container{
         display: grid;
         grid-gap: 15px 20px;
         grid-template-areas: 
-            "item1" 
+            "item1"
             "item2"
             "item3";
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .glassmorfism{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.103);
+        backdrop-filter: blur( 2px );
+        border: 1px solid rgba(255, 255, 255, 0.103);
     }
     
     .item{
         color: white;
-        padding: 20px;
+        text-align: center;
     }
     
     .item1{
         grid-area: item1;
-        align-items: center;
-        padding: 0%;
-        height: 100%;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 225px;
+        font-size: 30px;
     }
     
     .item2{
         grid-area: item2;
-        text-align:center;
-        padding: 0%;
-        margin: 0%;
-        width: 100%;
-        height: 50px;
-        font-size: 20px;
-    }
-    
-    main div h2{
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    main div p{
-        text-align: center;
-        margin: 0%;
-        padding: 0%;
-        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        font-size: 23px;
+        font-weight: 100;
     }
     
     .item3{
         grid-area: item3;
-        width: 100%;
-        height: 100%;
-        padding:0%;
-        margin: 0;
-    }
-    
-    #foto-juan{
-        width: 80%;
-        height: 100%;
-        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        height: 200px;
     }
 }
 
@@ -681,18 +616,18 @@ nav ul li{
 .center{
     display: flex;
     justify-content: center;
-    position:static;
 }
 
-.container-form {
+
+.cuestionario {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 40%;
+    width: 50%;
     border-radius: 30px;
     padding: 10px 40px 10px 40px;
     font-size: 18px;
-    font-weight: bold;
+    margin: 5% 0% 5% 0%;
 }
 
 div div form h1{
@@ -707,10 +642,6 @@ form{
 
 
 input[type=text], input[type=email], select, textarea {
-    background: rgba(255, 255, 255, 0.103);
-    border: 1px solid rgba(255, 255, 255, 0.103);
-    backdrop-filter: blur( 2px );
-    border-radius: 4px;
     width: 100%;
     padding: 10px;
     margin: 10px;
@@ -745,6 +676,208 @@ input[type=submit] {
     transform: scale(1.1);
     cursor: pointer;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1399px){
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .cuestionario {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        border-radius: 30px;
+        padding: 10px 40px 10px 40px;
+        font-size: 18px;
+        margin: 5% 0% 5% 0%;
+    }
+    
+    div div form h1{
+        margin-top: 20px;
+        margin-bottom: 7%;
+        font-size: 30px;
+    }
+    
+    form{
+        color: #ffffff;
+    }
+    
+    
+    input[type=text], input[type=email], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        resize: vertical;
+        font-size: 15px;
+    }
+    
+    input[type=submit] {
+        border: none;
+        background: #ea1538;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: white;
+        font-weight:bold;
+        font-size: 15px; 
+    }
+    
+    .button-form{
+        background: #ea153900;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: .5s;
+    }
+    
+    .button-form:hover{
+        background: #ea1539;
+        transform: scale(1.1);
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .cuestionario {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        border-radius: 30px;
+        padding: 10px 40px 10px 40px;
+        font-size: 18px;
+        margin: 5% 0% 5% 0%;
+    }
+    
+    div div form h1{
+        margin-top: 20px;
+        margin-bottom: 7%;
+        font-size: 30px;
+    }
+    
+    form{
+        color: #ffffff;
+    }
+    
+    
+    input[type=text], input[type=email], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        resize: vertical;
+        font-size: 15px;
+    }
+    
+    input[type=submit] {
+        border: none;
+        background: #ea1538;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: white;
+        font-weight:bold;
+        font-size: 15px; 
+    }
+    
+    .button-form{
+        background: #ea153900;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: .5s;
+    }
+    
+    .button-form:hover{
+        background: #ea1539;
+        transform: scale(1.1);
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 419px){
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .cuestionario {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px 40px 10px 40px;
+        font-size: 18px;
+        margin: 5% 0% 5% 0%;
+    }
+    
+    div div form h1{
+        margin-top: 20px;
+        margin-bottom: 7%;
+        font-size: 30px;
+    }
+    
+    form{
+        color: #ffffff;
+    }
+    
+    
+    input[type=text], input[type=email], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+        resize: vertical;
+        font-size: 15px;
+    }
+    
+    input[type=submit] {
+        border: none;
+        background: #ea1538;
+        padding: 12px 30px;
+        border-radius: 30px;
+        color: white;
+        font-weight:bold;
+        font-size: 15px; 
+    }
+    
+    .button-form{
+        background: #ea153900;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        padding: 12px 30px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: .5s;
+    }
+    
+    .button-form:hover{
+        background: #ea1539;
+        transform: scale(1.1);
+        cursor: pointer;
+        text-decoration: none;
+    }
 }
 
 /* CONTACTAME */
@@ -837,73 +970,242 @@ footer {
 
 /* SOBRE MI */
 
-.contenedor{
+.about{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 100px 100px 100px 450px;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    width: 900px;
-    height: 400px;
-    border: solid #ea1538 2px;
-    border-radius: 30px;
+    width: 1000px;
+    height: 500px;
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.titulo{
+    color: white;
 }
 
 .subtexto{
-    text-align: left;
-    margin-left: 420px;
-    font-size: 20px;
-}
-.img-left{
-    float: left;
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 100;
+    color: white;
 }
 
 .color-white{
     color: white;
 }
 
-.titulo-portafolio{
-    font-size: 30px;
-    margin-top: 0px;
-    
-}
-
 /* SOBRE MI END */
 
 /* PORTAFOLIO */
 
-.contenedor-portafolio{
-    text-align: center;
-    margin: 100px 100px 100px 250px;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-    width: 1290px;
-    height: 800px;
-    
-    border-radius: 30px;
+.section-grid{
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-areas: 
+        "item-1 item-2 item-3 item-4";
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
-.img-portafolio{
-    margin: 50px 60px 0px 60px;
-    width: 300px;
-    height: 300px;
-    border: solid #ffffff 2px;
+.item-general{
+    color: white;
+}
+
+.item-1{
+    display: flex;
+    justify-content: center;
+    grid-area: item-1;
+    height: 200px;
+    width: 100%;
+}
+
+.item-2{
+    display: flex;
+    justify-content: center;
+    grid-area: item-2;
+    height: 200px;
+    width: 100%;
+}
+
+.item-3{
+    display: flex;
+    justify-content: center;
+    grid-area: item-3;
+    height: 200px;
+    width: 100%;
+}
+
+.item-4{
+    display: flex;
+    justify-content: center;
+    grid-area: item-4;
+    height: 200px;
+    width: 100%;
+}
+
+section h1{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0% 0% 0%;
+    color: white;
+    font-size: 50px;
+}
+.port-img{
+    width: 1px;
+    height: 10px;
+    margin: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
     border-radius: 10px;
-    float: left;
 }
 
-.img-portafolio:hover{
-    border: solid #ea1538 2px;
+.port-img:hover{
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
     transition: .3s;
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1399px) {
+
+    .section-grid{
+        display: grid;
+        grid-gap: 15px 20px;
+        grid-template-areas: 
+            "item-1 item-2" 
+            "item-3 item-4";
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .item-general{
+        color: white;
+    }
+    
+    .item-1{
+        display: flex;
+        justify-content: center;
+        grid-area: item-1;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .item-2{
+        display: flex;
+        justify-content: center;
+        grid-area: item-2;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .item-3{
+        display: flex;
+        justify-content: center;
+        grid-area: item-3;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .item-4{
+        display: flex;
+        justify-content: center;
+        grid-area: item-4;
+        height: 200px;
+        width: 100%;
+    }
+    
+    section h1{
+        display: flex;
+        justify-content: center;
+        margin: 5% 0% 0% 0%;
+        color: white;
+        font-size: 50px;
+    }
+    .port-img{
+        width: 1px;
+        height: 10px;
+        margin: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 10px;
+    }
+    
+    .port-img:hover{
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+        transition: .3s;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+
+    .section-grid{
+        display: grid;
+        grid-gap: 15px 20px;
+        grid-template-areas: 
+            "item-1"
+            "item-2" 
+            "item-3" 
+            "item-4";
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    
+    .item-general{
+        color: white;
+    }
+    
+    .item-1{
+        display: flex;
+        justify-content: center;
+        grid-area: item-1;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .item-2{
+        display: flex;
+        justify-content: center;
+        grid-area: item-2;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .item-3{
+        display: flex;
+        justify-content: center;
+        grid-area: item-3;
+        height: 200px;
+        width: 100%;
+    }
+    
+    .item-4{
+        display: flex;
+        justify-content: center;
+        grid-area: item-4;
+        height: 200px;
+        width: 100%;
+    }
+    
+    section h1{
+        display: flex;
+        justify-content: center;
+        margin: 5% 0% 0% 0%;
+        color: white;
+        font-size: 40px;
+    }
+    .port-img{
+        width: 1px;
+        height: 10px;
+        margin: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 10px;
+    }
+    
+    .port-img:hover{
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+        transition: .3s;
+        cursor: pointer;
+    }
+}
 /* PORTAFOLIO END */
 
 /* HABILIDADES */
@@ -922,8 +1224,7 @@ footer {
 .card{
     width: 300px;
     position: relative;
-    margin: 50px 50px 50px 30px;
-    font-family: 'Poppins', sans-serif;
+    margin: 50px 30px 50px 30px;
     transition: all 300ms;
     border-radius: 20px;
 }
@@ -965,13 +1266,14 @@ footer {
 
 .info__description{
     width: 100%;
-    height: 170px;
+    height: 220px;
     color: #474747;
     background: #EFF3F5;
     padding: 20px;
     margin-top: -220px;
     transition: all 400ms cubic-bezier(0.5,0,0,1);
     border-radius: 20px;
+    font-size: 15px;
 }
 
 .info__description p{
